@@ -24,7 +24,7 @@ APP
 |
 |__ investment.db: sql database to store all prediction entries
 |
-|__ run.py: main flask app code that defines Investment model and routing between different html catboost_models
+|__ run.py: main flask app code that defines Investment model and routing between different html
 
 2. HOW TO run
 
