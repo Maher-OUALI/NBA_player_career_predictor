@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .col-size {
+                width: 100%;
+                padding: 0% 0 0 0 !important;
+                background: #fff;
+            }
+            .vert-center {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .vert-center p {
+                font-size: 24px;
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col-size">
+            <div class="vert-center">
+              <h2>{{name}}</h2>
+              {% if prediction == 0 %}
+              <p class="vert-center" style="color: red">This player has LOW chances to have a +5 years career with a probability of {{probability}}</p>
+              {% else %}
+              <p class="vert-center" style="color: green">This player has HIGH chances to have a +5 years career with a probability of {{probability}}</p>
+              {% endif %}
+            <div>
+            <form action="/form" method="GET">
+                <input type="submit" value="New Entry">
+            </form>
+            <form action="/old" method="GET">
+                <input type="submit" value="View past invstements">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> Please, enter NBA player stats </p>
+<form action="/predict" method="POST">
+
+  <label for="name">Name:</label><br>
+  <input type="text" name="name" value="John"><br>
+  <label for="GP">Games Played:</label><br>
+  <input type="number" name="GP" value=0><br>
+  <label for="MIN">Minutes Played:</label><br>
+  <input type="float" name="MIN" value=0><br>
+  <label for="PTS">Points Per Game:</label><br>
+  <input type="float" name="PTS" value=0><br>
+  <label for="FGM">Field Goals Made:</label><br>
+  <input type="float" name="FGM" value=0><br>
+  <label for="FGA">Field Goals Attempts:</label><br>
+  <input type="float" name="FGA" value=0><br>
+  <label for="FG%">Field Goals Percent:</label><br>
+  <input type="float" name="FG%" value=0><br>
+  <label for="3P Made">3 Points Made:</label><br>
+  <input type="float" name="3P Made" value=0><br>
+  <label for="3PA">3 Points Attempts:</label><br>
+  <input type="float" name="3PA" value=0><br>
+  <label for="3P%">3 Points Percent:</label><br>
+  <input type="float" name="3P%" value=0><br>
+  <label for="FTM">Free Throw Made:</label><br>
+  <input type="float" name="FTM" value=0><br>
+  <label for="FTA">Free Throw Attempts:</label><br>
+  <input type="float" name="FTA" value=0><br>
+  <label for="FT%">Free Throw Percent:</label><br>
+  <input type="float" name="FT%" value=0><br>
+  <label for="OREB">Offensive Rebounds:</label><br>
+  <input type="float" name="OREB" value=0><br>
+  <label for="DREB">Defensive Rebounds:</label><br>
+  <input type="float" name="DREB" value=0><br>
+  <label for="REB">Rebounds:</label><br>
+  <input type="float" name="REB" value=0><br>
+  <label for="AST">Assists:</label><br>
+  <input type="float" name="AST" value=0><br>
+  <label for="STL">Steals:</label><br>
+  <input type="float" name="STL" value=0><br>
+  <label for="BLK">Blocks:</label><br>
+  <input type="float" name="BLK" value=0><br>
+  <label for="TOV">Turnovers:</label><br>
+  <input type="float" name="TOV" value=0><br><br>
+  
+  <input type="submit" value="Predict">
+</form> 
+
+<form action="/old" method="GET">
+    <input type="submit" value="View past invstements">
+</form>
+
+</body>
+</html>
